@@ -1,0 +1,107 @@
+{
+  "name": "google-cloud-translate",
+  "publisher": "shinganEuler",
+  "displayName": "Google Cloud Translate",
+  "description": "vscode translate extension use google cloud api",
+  "keywords": [
+    "Google",
+    "Translate",
+    "english",
+    "chinese",
+    "language",
+    "Japanese",
+    "Korean"
+  ],
+  "repository": "https://github.com/shinganEuler/vscode-google-cloud-translate",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:*.*",
+    "onCommand:google-cloud-translate.translate",
+    "onCommand:google-cloud-translate.translate-select"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "hoverProvider": "true",
+    "commands": [
+      {
+        "command": "google-cloud-translate.translate-to-newline",
+        "category": "Google Cloud Translate",
+        "title": "translate select text and write to newline"
+      },
+      {
+        "command": "google-cloud-translate.translate-and-replace",
+        "category": "Google Cloud Translate",
+        "title": "translate select text and replace original text"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "google-cloud-translate.translate-to-newline",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+option+t",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "google-cloud-translate.translate-and-replace",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+option+r",
+        "when": "editorHasSelection"
+      }
+    ],
+    "configuration": {
+      "title": "Google Cloud Translate",
+      "properties": {
+        "google-cloud-translate.google-cloud-api-key": {
+          "type": "string",
+          "default": "Replace With Your Google Cloud API Key",
+          "description": "Replace With Your Google Cloud API Key"
+        },
+        "google-cloud-translate.target-language": {
+          "type": "string",
+          "default": "zh-cn",
+          "description": "Please enter the target language."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "@vscode/test-electron": "^2.2.2",
+    "eslint": "^8.33.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4"
+  },
+  "configuration": {
+    "title": "Google Cloud Translate",
+    "properties": {
+      "google-cloud-translate.projectId": {
+        "type": "string",
+        "default": "Replace With Your Project Id",
+        "description": ""
+      }
+    }
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^7.1.0"
+  }
+}
