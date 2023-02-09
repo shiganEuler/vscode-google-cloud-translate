@@ -40,7 +40,7 @@ Initial release of Google Cloud Translate extension.
 
 Github Project
 
-https://github.com/shiganEuler/vscode-google-cloud-translate
+https://github.com/shinganEuler/vscode-google-cloud-translate
 
 PRs are welcome!
 
