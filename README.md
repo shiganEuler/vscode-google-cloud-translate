@@ -6,9 +6,9 @@ A VSCode extension to translate text using Google Cloud Translate API.
 
 Currently, the extension only supports translating text from the active editor selection. 
 
-To translate the selected text, press `Ctrl+Alt+T` (Windows, Linux) or `Cmd+Option+T` (macOS), and the translated text will be insert to the end of the selection. 
+To translate the selected text, press `Ctrl+Alt+T` (Windows, Linux) or `Ctrl+Cmd+T` (macOS), and the translated text will be insert to the end of the selection. 
 
-If you want to replace the selected text with the translated text, press `Ctrl+Alt+R` (Windows, Linux) or `Cmd+Option+R` (macOS).
+If you want to replace the selected text with the translated text, press `Ctrl+Alt+R` (Windows, Linux) or `Ctrl+Cmd+R` (macOS).
 
 ## Extension Settings
 

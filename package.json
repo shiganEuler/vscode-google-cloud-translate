@@ -13,7 +13,7 @@
     "Korean"
   ],
   "repository": "https://github.com/shinganEuler/vscode-google-cloud-translate",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -44,13 +44,13 @@
       {
         "command": "google-cloud-translate.translate-to-newline",
         "key": "ctrl+alt+t",
-        "mac": "cmd+option+t",
+        "mac": "ctrl+cmd+t",
         "when": "editorHasSelection"
       },
       {
         "command": "google-cloud-translate.translate-and-replace",
         "key": "ctrl+alt+r",
-        "mac": "cmd+option+r",
+        "mac": "ctrl+cmd+r",
         "when": "editorHasSelection"
       }
     ],
