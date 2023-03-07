@@ -13,7 +13,7 @@
     "Korean"
   ],
   "repository": "https://github.com/shinganEuler/vscode-google-cloud-translate",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -90,16 +90,6 @@
     "glob": "^8.1.0",
     "mocha": "^10.1.0",
     "typescript": "^4.9.4"
-  },
-  "configuration": {
-    "title": "Google Cloud Translate",
-    "properties": {
-      "google-cloud-translate.projectId": {
-        "type": "string",
-        "default": "Replace With Your Project Id",
-        "description": ""
-      }
-    }
   },
   "dependencies": {
     "@google-cloud/translate": "^7.1.0"

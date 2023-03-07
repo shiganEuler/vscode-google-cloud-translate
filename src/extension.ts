@@ -59,6 +59,7 @@ export function activate(context: vscode.ExtensionContext) {
 		translate_select(true);
 	});
 
+	context.subscriptions.push(translateToNewlineDisposable);
 	context.subscriptions.push(translateAndReplaceDisposable);
 }
 
